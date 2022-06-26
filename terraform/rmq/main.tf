@@ -3,7 +3,7 @@ provider "aws" {
   profile = var.profile
 }
 
-resource "aws_instance" "ec2-rmq" {
+resource "aws_instance" "rmq" {
   ami                    = "ami-0f5094faf16f004eb"
   instance_type          = "t2.micro"
   key_name               = "awskey"
