@@ -1,3 +1,6 @@
 *.pem
 Jenkins-aws_accessKeys.csv
 *.csv
+.terraform/
+.terraform/terraform.tfstate
+.terraform.lock.hcl
