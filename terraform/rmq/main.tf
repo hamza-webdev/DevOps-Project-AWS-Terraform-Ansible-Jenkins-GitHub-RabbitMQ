@@ -1,6 +1,6 @@
 provider "aws" {
   region  = "eu-west-3"
-  profile = "default"
+  profile = var.profile
 }
 
 resource "aws_instance" "rmq" {
@@ -10,7 +10,8 @@ resource "aws_instance" "rmq" {
   vpc_security_group_ids = ["sg-0a34a4aab9bd56a69"]
 
   tags = {
-    name  = var.name
-    group = var.group
+    name    = var.name
+    group   = var.group
+    profile = var.profile
   }
 }
