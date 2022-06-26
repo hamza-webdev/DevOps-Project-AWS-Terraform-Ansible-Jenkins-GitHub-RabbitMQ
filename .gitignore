@@ -4,3 +4,6 @@ Jenkins-aws_accessKeys.csv
 .terraform/
 .terraform/terraform.tfstate
 .terraform.lock.hcl
+.terraform.tfstate.backup
+terraform.tfstate
+.terraform.tfstate.*
