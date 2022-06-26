@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+    - name: stop container
+      shell: docker container stop mydockercontainerdevops
+    - name: remove container
+      shell: docker container rm mydockercontainerdevops
+    - name: remove docker image
+      shell: docker image rmi hamzabedwi/dockerdevops_image
+    - name: create new container
+      shell: docker container run -itd --name mydockercontainerdevops -p 9000:80 hamzabedwi/dockerdevops_image
