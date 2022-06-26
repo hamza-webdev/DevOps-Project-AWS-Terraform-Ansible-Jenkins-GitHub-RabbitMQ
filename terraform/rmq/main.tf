@@ -1,6 +1,5 @@
 provider "aws" {
-  region  = "eu-west-3"
-  profile = "customprofile"
+  region = "eu-west-3"
 }
 
 resource "aws_instance" "rmq" {
