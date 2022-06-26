@@ -15,3 +15,5 @@
 - **Instance RabbitMQ** dans EC2 et une direction à suivre pour apprendre les spécificités de RMQ.
 
 ![shema de notre architecture basic](img1.png)
+
+## les CMD necessaires
